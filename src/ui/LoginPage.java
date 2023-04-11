@@ -160,6 +160,17 @@ public class LoginPage extends javax.swing.JFrame {
         });
     }
 
+    private void applyFont() {
+        try {
+            FontSetting fs = new FontSetting("Code2000", 1, 14);
+            fs.selectContainer(getContentPane());
+        } catch (Exception e) {
+            System.err.println("" + e.getMessage());
+        }
+    }
+    
+    
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnLogin;
     private javax.swing.JComboBox<String> cmbChooseLanguage;
